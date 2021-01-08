@@ -16,7 +16,7 @@ function findKeyByValue(obj, value) {
 
     }
   }
-}
+};
 
 
 
