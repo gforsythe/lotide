@@ -1,0 +1,22 @@
+{
+  "name": "@gforsythe/lotide",
+  "version": "1.0.0",
+  "description": "A mini clone of lodash.",
+  "main": "assertArraysEqual.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gforsythe/lotide.git"
+  },
+  "author": {"name": "gabe"},
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gforsythe/lotide/issues"
+  },
+  "homepage": "https://github.com/gforsythe/lotide#readme"
+}
