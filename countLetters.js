@@ -26,7 +26,8 @@ function countLetters(letters) {
   // The object will contain key and value. letter and # of letters.
 };
 
-let resultOne = countLetters("LHL");
+let resultOne = countLetters("lighthouse in the house");
 console.log(resultOne);
-assertEqual(resultOne["L"], 2);
-assertEqual(resultOne["H"], 1);// {  l: 2, h: 1}
+assertEqual(resultOne["l"], 2);
+assertEqual(resultOne["h"], 1);// {  l: 2, h: 1}
+assertEqual(resultOne["i"], 2);

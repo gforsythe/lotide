@@ -27,14 +27,14 @@ const eqObjects = function (object1, object2) { //takes in obj1 and obj2 if true
   const objOneKeys = Object.keys(object1)
   const objTwoKeys = Object.keys(object2)
 
-  if (objOneKeys.length !== objTwoKeys.length) {
+  if (objOneKeys.length !== objTwoKeys.length) { // are objects the same length if not then return false
     return false;
   }
   for (let key of objOneKeys) {  // keyorder: c, d console.log(object1[key]) :1, ["2",3]
-    if (Array.isArray(object1[key]) && Array.isArray(object2[key])) {
-      return eqArrays(object1[key], object2[key])
+    if (Array.isArray(object1[key]) && Array.isArray(object2[key])) { //is this an array? Y/N
+      return eqArrays(object1[key], object2[key]) // this function compares array to array of objects and returns true or false
     } else if (object1[key] === object2[key]) { //we are checking if the value of the key is the same DOES NOT WORK FOR ARRAYS
-      continue;
+      continue; // this command I don't understand very well
     } else {
       return false
     }
@@ -49,7 +49,7 @@ const eqObjects = function (object1, object2) { //takes in obj1 and obj2 if true
 
 const cd = { c: "1", d: ["2", 3] };
 const dc = { d: ["2", 3], c: "1" };
-console.log(eqObjects(cd, dc));
+eqObjects(cd, dc);
 
 
 const cd2 = { c: "1", d: ["2", 3, 4] };

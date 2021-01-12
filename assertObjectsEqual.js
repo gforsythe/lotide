@@ -1,19 +1,13 @@
 
 const cd = { c: "1", d: [3] };
 const dc = { d: ["2", 3], c: "1" };
-const assertObjectsEqual = function(actual, expected) {
+const assertObjectsEqual = function (actual, expected) {
   const inspect = require('util').inspect;
   if (actual === expected) {
-    console.log
-    
-    
-    (`😈😈😈 Assertion Passed: ${inspect(actual)} === ${expected}`);
+    console.log(`😈😈😈 Assertion Passed: ${inspect(actual)} === ${expected}`);
 
   } else {
-    console.log
-    
-    
-    (`🤮🤮🤮 Assertion Failed:${inspect(actual)} !== ${expected}.`)
+    console.log(`🤮🤮🤮 Assertion Failed:${inspect(actual)} !== ${expected}.`)
 
   }
 };

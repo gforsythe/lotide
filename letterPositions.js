@@ -1,11 +1,11 @@
 const letterPositions = function (sentence) {
-  let lettersPlaced = {};// final result {h: [0], e: [1], l: [2,3], o:[4] } right now it is like countOnly
-  for (let i = 0; i < sentence.length; i++) {
-    if (sentence[i] !== "") {
-      if (lettersPlaced[sentence[i]]) {
-        lettersPlaced[sentence[i]].push(i);
+  let lettersPlaced = {};// final result {h: [0], e: [1], l: [2,3], o:[4] } 
+  for (let i = 0; i < sentence.length; i++) {// iterate through sentence
+    if (sentence[i] !== "") { // if we dont have a space then proceed to grab a letter
+      if (lettersPlaced[sentence[i]]) {// is we have a letter that is indexed
+        lettersPlaced[sentence[i]].push(i);// lets store it
 
-      } else {
+      } else {// otherwise if we have one lets add a new index
         lettersPlaced[sentence[i]] = [i]
       }
 
@@ -13,7 +13,7 @@ const letterPositions = function (sentence) {
 
   }
 
-  return lettersPlaced
+  return lettersPlaced  //give me my letters
 
 }
 
